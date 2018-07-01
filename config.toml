@@ -2,3 +2,7 @@ baseURL = "http://bkkcast.me/"
 languageCode = "jp"
 title = "Bangkok Cast"
 hasCJKLanguage = true
+
+[params]
+  description = "バンコクで働くエンジニアを集めて、バンコクの生活事情、最近エンジニア界隈で話題になったニュースなどについて話し合います。"
+  eyecatch = "img/eyecatch.png"

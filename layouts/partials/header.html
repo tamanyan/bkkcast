@@ -26,9 +26,9 @@
   <link href="https://fonts.googleapis.com/earlyaccess/notosansjp.css" rel="stylesheet">
   <link href="https://cdn.bootcss.com/highlight.js/9.12.0/styles/default.min.css" rel="stylesheet">
   <!-- MediaElements style -->
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.9/mediaelementplayer.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.9/mediaelementplayer.css" />
   <!-- MediaElement -->
-  <script src="//cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.9/mediaelement-and-player.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.9/mediaelement-and-player.js"></script>
   <link href="/css/style.css" rel="stylesheet">
   <!-- Favicons -->
   <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
@@ -40,12 +40,14 @@
   <!-- Twitter Card Metas -->
   <meta name="og:title" content="{{ .Title }}" />
   <meta name="og:description" content="{{ if .IsPage }}{{ .Summary }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
-  <meta name="og:image" content="{{ .Site.BaseURL }}{{ .Params.eyecatch }}" />
+  <meta name="og:image" content="{{ .Site.BaseURL }}{{ .Site.Params.eyecatch }}" />
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:url" content="{{ .Permalink }}" />
   <meta name="twitter:site" content="@bkkcast" />
   <meta name="twitter:creator" content="@bkkcast" /> 
+  <meta name="twitter:image" content="{{ .Site.BaseURL }}{{ .Site.Params.eyecatch }}">
 </head>
+
 <body class="{{if eq .Kind `page` }}single{{else}}list{{end}}">
   <header class="header">
     {{ if .IsHome }}
