@@ -2,20 +2,34 @@
 Title: vol.1 bkkcast 始めます
 paginate: 1
 date: "2018-07-01"
-params:
-  summary: Tet
 ---
 
-<div class="media-wrapper">
-    <audio id="player2" preload="none" controls style="width:100%;">
-        <source src="http://www.largesound.com/ashborytour/sound/AshboryBYU.mp3" type="audio/mp3">
-    </audio>
+<!-- <div class="media-wrapper">
+  <audio id="player2" preload="none" controls style="width:100%;">
+      <source src="http://www.largesound.com/ashborytour/sound/AshboryBYU.mp3" type="audio/mp3">
+  </audio>
+</div> -->
+
+<div class="presenter-container">
+  <div class="presenter-item">
+    <a href="https://twitter.com/tamanyan55" target="_blank"><img class="icon" src="https://pbs.twimg.com/profile_images/712212594396778497/BqOVpfAj_400x400.jpg"><span>@tamanyan55</span></a>
+  </div>
+  <div class="presenter-item">
+    <a href="https://twitter.com/tejitak" target="_blank"><img class="icon" src="https://pbs.twimg.com/profile_images/962982531938246656/wGmx7qIC_400x400.jpg"><span>@tejitak</span></a>
+  </div>
 </div>
 
-</br>
+## お品書き
+
+※収録当日にエンジニアの時事ネタを決めます
 
 - 自己紹介
-- なぜバンコクにいるのか？
+ - <a href="https://twitter.com/tamanyan55" target="_blank">@tamanyan55</a> (バンコクで働くエンジニア・たまにゃん)
+ - <a href="https://twitter.com/tejitak" target="_blank">@tejitak</a> (Takuya Tejima / GAOGAO@バンコク )
+- このラジオで今後話していく事
+  - バンコクの日本人エンジニアコミュニティ
+  - ゲスト出演者について
+  - バンコクの生活事情
+  - 外国語について
 - エンジニア時事ネタ
   - Firebase 年収800万 ~ 1000万
-  - XXXXXXXXXXXXXXXXXXXX

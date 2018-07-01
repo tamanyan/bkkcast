@@ -9,7 +9,7 @@
     </p>
   </header>
   <div class="post-content">{{ .Content }}</div>
-  <footer class="post-footer">
+  <!-- <footer class="post-footer">
     {{ if .Params.tags }}
     <ul class="post-tags">
       {{ range .Params.tags }}
@@ -17,7 +17,7 @@
       {{ end }}
     </ul>
     {{ end }}
-  </footer>
+  </footer> -->
   <!-- Comments system area start -->
   {{ if not (eq .Params.comments false) }}
   {{ if .Site.DisqusShortname }}
