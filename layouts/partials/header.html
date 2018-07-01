@@ -46,14 +46,22 @@
   <meta name="twitter:site" content="@bkkcast" />
   <meta name="twitter:creator" content="@bkkcast" /> 
   <meta name="twitter:image" content="{{ .Site.BaseURL }}{{ .Site.Params.eyecatch }}">
+  <!-- Facebook Metas -->
+  <meta property="og:url" content="{{ .Permalink }}" />
+  <meta property="og:title" content="{{ .Title }}" />
+  <meta property="og:description" content="{{ if .IsPage }}{{ .Summary }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
+  <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Site.Params.eyecatch }}" />
+  {{- if not .IsHome }}
+  <meta property="og:type" content="article" />
+  {{- end }}
 </head>
 
 <body class="{{if eq .Kind `page` }}single{{else}}list{{end}}">
   <header class="header">
     {{ if .IsHome }}
-    <h1 class="title"><a href="{{ `/` }}"><span>🇹🇭</span>{{ .Site.Title }}</a></h1>
+    <h1 class="title"><a href="{{ `/` }}"><img src="/img/header-title.png"></a></h1>
     {{ else }}
-    <p class="title"><a href="{{ `/` }}"><span>🇹🇭</span>{{ .Site.Title }}</a></p>
+    <p class="title"><a href="{{ `/` }}"><img src="/img/header-title.png"></a></p>
     {{ end }}
     <button class="menu-toggle" type="button"></button>
     <nav class="menu">

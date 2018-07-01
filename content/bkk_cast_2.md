@@ -1,6 +1,6 @@
 ---
-Title: vol.2 Bangkok Cast 始めます
+Title: vol.2 bkkcast 始めます
 paginate: 2
-date: "2018-07-01"
+date: "2018-07-23"
 ---
 
