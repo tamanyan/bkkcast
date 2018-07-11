@@ -1,5 +1,5 @@
 ---
-Title: vol.1 bkkcast 始めます
+Title: 1. bkkcast 始めます
 paginate: 1
 date: "2018-07-01"
 ---
