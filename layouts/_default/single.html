@@ -8,6 +8,7 @@
       {{- .Date.Format "2006.1.2" -}}
     </p>
   </header>
+  {{ partial "social.html" . }}
   <div class="post-content">{{ .Content }}</div>
   <!-- <footer class="post-footer">
     {{ if .Params.tags }}

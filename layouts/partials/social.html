@@ -1,0 +1,25 @@
+<!-- Social Share Button HTML -->
+
+<div class="social">
+  <!-- Hatena  -->
+  {{ if .Site.Params.socialShareHatena | default true}}
+    <a href="https://b.hatena.ne.jp/entry/s/{{ replaceRE "https?://" "" .Permalink }}" target="_blank" class="share-btn hatena">
+      <i class="fa fa-hatena"></i>
+    </a>
+  {{ end }}
+
+  <!-- Twitter -->
+  {{ if .Site.Params.socialShareTwitter | default true}}
+    <a href="https://twitter.com/share?url={{ .Permalink }}&amp;text={{ .Title }}&amp;via={{ .Site.Social.twitter }}" target="_blank" class="share-btn twitter">
+      <i class="fa fa-twitter"></i>
+    </a>
+  {{ end }}
+
+    <!-- Facebook -->
+  {{ if .Site.Params.socialShareFacebook | default true}}
+
+    <a href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink }}" target="_blank" class="share-btn facebook">
+      <i class="fa fa-facebook"></i>
+    </a>
+  {{ end }}
+</div>
