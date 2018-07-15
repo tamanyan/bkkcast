@@ -10,7 +10,7 @@
 
   <!-- Twitter -->
   {{ if .Site.Params.socialShareTwitter | default true}}
-    <a href="https://twitter.com/share?url={{ .Permalink }}&amp;text={{ .Title }}&amp;via={{ .Site.Social.twitter }}" target="_blank" class="share-btn twitter">
+    <a href="https://twitter.com/share?url={{ .Permalink }}&amp;text={{ .Title }}&amp;hashtags=bkkcast&amp;via={{ .Site.Social.twitter }}" target="_blank" class="share-btn twitter">
       <i class="fa fa-twitter"></i>
     </a>
   {{ end }}
