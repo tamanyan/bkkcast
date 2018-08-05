@@ -1,0 +1,41 @@
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
+
+<channel>
+  <title>{{ with .Title }}{{.}} on {{ end }}{{ .Site.Title }}</title>
+  <link>{{ .Permalink }}</link>
+  <language>ja</language>
+  <copyright>bkkcast</copyright>
+  <itunes:subtitle></itunes:subtitle>
+  <itunes:author>{{ .Params.author | default .Site.Params.author }}</itunes:author>
+  <itunes:summary>{{ .Summary }}</itunes:summary>
+
+  <description>{{ .Site.Params.description }}</description>
+  <itunes:owner>
+    <itunes:name>bkkcast</itunes:name>
+    <itunes:email></itunes:email>
+  </itunes:owner>
+  <itunes:owner>
+    <itunes:name>{{ .Params.author | default .Site.Params.author }}</itunes:name>
+    <itunes:email></itunes:email>
+  </itunes:owner>
+  <itunes:image href="{{ .Site.BaseURL }}{{ .Site.Params.eyecatch }}" />
+  <itunes:category text="Talk">
+  </itunes:category>
+
+  {{ $paginator := .Paginate (where .Pages ".Params.type" "!=" "page") (index .Site.Params "paginate" | default 10) }}
+  {{ range $index, $page := $paginator.Pages }}
+  <item>
+    <title>{{ .Title }}</title>
+    <itunes:author>{{ .Params.author | default .Site.Params.author }}</itunes:author>
+    <itunes:summary>{{ .Summary }}</itunes:summary>
+    <enclosure url="" length="" type="audio/mp3" />
+    <guid>{{ .Permalink }}</guid>
+    <pubDate>{{ .Date.Format "2006.1.2" }}</pubDate>
+    <itunes:duration></itunes:duration>
+    <itunes:keywords></itunes:keywords>
+  </item>
+  {{ end }}
+
+</channel>
+
+</rss>

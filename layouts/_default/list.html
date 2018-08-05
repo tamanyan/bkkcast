@@ -9,7 +9,7 @@
 {{ end }}
 <section>
   <div class="explaination">
-    <p class="title">バンコクで働くエンジニアを集めて、バンコクの生活事情、最近エンジニア界隈で話題になったニュースなどについて話し合います。</h2>
+    <p class="title">バンコクを中心として、海外で働くエンジニアを集めて、生活事情、最近エンジニア界隈で話題になったニュースなどについて話し合います。</h2>
   </div>
 {{ $paginator := .Paginate (where .Pages ".Params.type" "!=" "page") (index .Site.Params "paginate" | default 10) }}
 {{ if gt $paginator.TotalPages 0 }}
