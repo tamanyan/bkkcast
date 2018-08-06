@@ -1,13 +1,13 @@
 <rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
 
 <channel>
-  <title>{{ with .Title }}{{.}} on {{ end }}{{ .Site.Title }}</title>
+  <title>{{ .Site.Title }}</title>
   <link>{{ .Permalink }}</link>
   <language>ja</language>
   <copyright>bkkcast</copyright>
   <itunes:subtitle></itunes:subtitle>
   <itunes:author>{{ .Params.author | default .Site.Params.author }}</itunes:author>
-  <itunes:summary>{{ .Summary }}</itunes:summary>
+  <itunes:summary>{{ .Site.Params.description }}</itunes:summary>
 
   <description>{{ .Site.Params.description }}</description>
   <itunes:owner>
