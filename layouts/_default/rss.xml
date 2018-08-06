@@ -5,6 +5,7 @@
   <link>{{ .Permalink }}</link>
   <language>ja</language>
   <copyright>bkkcast</copyright>
+  <media:keywords>tech,technology,programming,mobile,web,node,apple,google,development,software,bangkok</media:keywords>
   <itunes:subtitle></itunes:subtitle>
   <itunes:author>{{ .Params.author | default .Site.Params.author }}</itunes:author>
   <itunes:summary>{{ .Site.Params.description }}</itunes:summary>
@@ -30,7 +31,7 @@
     <itunes:summary>{{ .Summary }}</itunes:summary>
     <enclosure url="{{ .Site.BaseURL }}mp3/{{ .Params.mp3 }}" length="" type="audio/mp3" />
     <guid>{{ .Permalink }}</guid>
-    <pubDate>{{ .PublishDate }}</pubDate>
+    <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
     <itunes:duration></itunes:duration>
     <itunes:keywords>
     </itunes:keywords>
