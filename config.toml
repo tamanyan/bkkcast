@@ -7,6 +7,7 @@ hasCJKLanguage = true
   author = "bkkcast"
   description = "バンコクを中心として、海外で働くエンジニアを集めて、生活事情、最近エンジニア界隈で話題になったニュースなどについて話し合います"
   eyecatch = "img/eyecatch.png"
+  itunesArtwork = "img/itunes-artwork.png"
 
 [menu]
 
