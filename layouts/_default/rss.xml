@@ -5,7 +5,6 @@
   <link>{{ .Permalink }}</link>
   <language>ja</language>
   <copyright>bkkcast</copyright>
-  <media:keywords>tech,technology,programming,mobile,web,node,apple,google,development,software,bangkok</media:keywords>
   <itunes:subtitle></itunes:subtitle>
   <itunes:author>{{ .Params.author | default .Site.Params.author }}</itunes:author>
   <itunes:summary>{{ .Site.Params.description }}</itunes:summary>
