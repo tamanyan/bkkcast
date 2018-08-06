@@ -28,11 +28,12 @@
     <title>{{ .Title }}</title>
     <itunes:author>{{ .Params.author | default .Site.Params.author }}</itunes:author>
     <itunes:summary>{{ .Summary }}</itunes:summary>
-    <enclosure url="" length="" type="audio/mp3" />
+    <enclosure url="{{ .Site.BaseURL }}mp3/{{ .Params.mp3 }}" length="" type="audio/mp3" />
     <guid>{{ .Permalink }}</guid>
-    <pubDate>{{ .Date.Format "2006.1.2" }}</pubDate>
+    <pubDate>{{ .PublishDate }}</pubDate>
     <itunes:duration></itunes:duration>
-    <itunes:keywords></itunes:keywords>
+    <itunes:keywords>
+    </itunes:keywords>
   </item>
   {{ end }}
 
