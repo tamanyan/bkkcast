@@ -54,6 +54,13 @@
       } catch (e) { }
     });
   });
+
+  $(function() {
+    $('audio,video').mediaelementplayer({
+      success: function(player, node) {
+      }
+    });
+  });
 </script>
 
 <script>
