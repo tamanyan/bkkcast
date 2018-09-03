@@ -1,4 +1,4 @@
 [submodule "public"]
-   path = public
-   url = https://github.com/tamanyan/tamanyan.github.io
+	path = public
+	url = https://github.com/bkkcast/bkkcast.github.io
    branch = master
