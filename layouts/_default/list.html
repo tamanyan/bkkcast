@@ -25,7 +25,7 @@
     {{ safeHTML (.Scratch.Get `firstEmoji`) }}
     <h2 class="post-title">{{ .Title }}</h2>
   </header>
-  <p class="post-summary">{{ .Summary }}</p>
+  <p class="post-summary">{{ .Params.description | default .Summary }}</p>
   <footer class="post-footer">
     <p class="post-meta">{{ .Date.Format "2006.1.2" }}</p>
   </footer>
