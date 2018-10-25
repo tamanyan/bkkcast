@@ -22,8 +22,7 @@
   <itunes:category text="Talk">
   </itunes:category>
 
-  {{ $paginator := .Paginate (where .Pages ".Params.type" "!=" "page") (index .Site.Params "paginate" | default 10) }}
-  {{ range $index, $page := $paginator.Pages }}
+  {{ range (.Pages.ByParam "index") }}
   <item>
     <title>{{ .Title }}</title>
     <itunes:author>{{ .Params.author | default .Site.Params.author }}</itunes:author>
