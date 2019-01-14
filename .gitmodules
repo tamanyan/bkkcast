@@ -1,4 +1,4 @@
 [submodule "public"]
 	path = public
-	url = https://github.com/bkkcast/bkkcast.github.io
+	url = git@github.com:bkkcast/bkkcast.github.io.git
    branch = master
